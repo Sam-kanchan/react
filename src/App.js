@@ -8,21 +8,32 @@ import './App.css';
 class App extends Component {
 
   myVar = 'Hello';
+
+  // creating the state to manage the data of application at one place
+  state = {
+    person: [
+      { name: 'Alex', age: '30' },
+      { name: 'Bob', age: '20' },
+      { name: 'Mary', age: '23' },
+      { name: 'Mark', age: '40' }
+    ]
+  }
   render() {
     return (
 
       <div className="App">
-        <Person name="Alex">
+        {/* using the state to manage the data of application at one place*/}
+        <Person name={this.state.person[0].name} age={this.state.person[0].age}>
           <p>I like cricket</p>
         </Person>
-        <Person name="Bob">
+        <Person name={this.state.person[1].name} age={this.state.person[1].age}>
           <p>I like football</p>
         </Person>
-        <Person name="Mary">
+        <Person name={this.state.person[2].name} age={this.state.person[2].age}>
           <p>I like tennis</p>
         </Person>
 
-        <Person name="Mark" />
+        <Person name={this.state.person[3].name} age={this.state.person[3].age} />
         <div className="App">{this.myVar}</div>
       </div>
     )

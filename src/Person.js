@@ -17,7 +17,7 @@ class Person extends Component {
         return (
             < div >
                 <div>
-                    <p>Hi I am {this.props.name}, having age {Math.floor(Math.random() * 30)}</p>
+                    <p>Hi I am {this.props.name}, having age {this.props.age}</p>
                 </div>
                 <p>{this.props.children}</p>
             </div >
