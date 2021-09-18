@@ -8,9 +8,15 @@ import './App.css';
 class App extends Component {
 
   render() {
-    return <div className="App">
-      <Person></Person>
-    </div>
+    return (
+      <div className="App">
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
+
+        <Person />
+      </div>
+    )
   }
 }
 
