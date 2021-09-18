@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component {
 
   render() {
-    return <h1 className="App">Hello React!!!</h1>
+    return React.createElement('div', { className: 'App' }, React.createElement('h1', { className: 'Name' }, 'Hi Jittu'))
   }
 }
 
