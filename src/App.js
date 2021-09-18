@@ -7,6 +7,7 @@ import './App.css';
 
 class App extends Component {
 
+  myVar = 'Hello';
   render() {
     return (
 
@@ -22,6 +23,7 @@ class App extends Component {
         </Person>
 
         <Person name="Mark" />
+        <div className="App">{this.myVar}</div>
       </div>
     )
   }
