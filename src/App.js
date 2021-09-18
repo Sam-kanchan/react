@@ -1,13 +1,16 @@
 // //class based component
 import React from "react";
 import { Component } from "react";
+import Person from "./Person";
 
 import './App.css';
 
 class App extends Component {
 
   render() {
-    return React.createElement('div', { className: 'App' }, React.createElement('h1', { className: 'Name' }, 'Hi Jittu'))
+    return <div className="App">
+      <Person></Person>
+    </div>
   }
 }
 
